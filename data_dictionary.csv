@@ -1,0 +1,802 @@
+file,column,until,from,description
+all_uti_resist_labels.csv,example_id,,,Unique specimen ID used to link between files
+all_uti_resist_labels.csv,NIT,,,Indicator of resistance to nitrofurantoin
+all_uti_resist_labels.csv,SXT,,,Indicator of resistance to trimethoprim-sulfamethoxazole
+all_uti_resist_labels.csv,CIP,,,Indicator of resistance to ciprofloxacin
+all_uti_resist_labels.csv,LVX,,,Indicator of resistance to levofloxacin
+all_uti_resist_labels.csv,is_train,,,Used to denote membership in training set (2007-13)
+all_uti_resist_labels.csv,uncomplicated,,,Used to denote membership in uncomplicated UTI cohort
+all_prescriptions.csv,example_id,,,Unique specimen ID used to link between files
+all_prescriptions.csv,prescription,,,"Observed empiric prescription (one of NIT, SXT, CIP, LVX)"
+all_prescriptions.csv,is_train,,,Used to denote membership in training set (2007-13)
+all_uti_features.csv,example_id,,,Unique specimen ID used to link between files
+all_uti_features.csv,demographics - age,,,Age (years)
+all_uti_features.csv,demographics - is_white,,,Race (white)
+all_uti_features.csv,demographics - is_veteran,,,Veteran Status (true)
+all_uti_features.csv,micro - prev resistance LVX 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMP 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CFZ 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NIT 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GEN 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SXT 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TET 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMC 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CIP 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SAM 14,7.0,14.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERY 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance OXA 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance QUD 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance RIF 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMP 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CFZ 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PEN 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LVX 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CLI 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance DOX 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NIT 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TET 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CIP 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CRO 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GEN 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SXT 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMC 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ATM 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PIP 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TOB 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TZP 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SAM 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance STRS 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance MXF 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FOX 30,7.0,30.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMC 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMP 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ATM 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CAZ 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CIP 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CRO 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NAL 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PIP 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SXT 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TET 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CFZ 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LVX 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NIT 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance OXA 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PEN 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERY 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CHL 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance QUD 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance DOX 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance RIF 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CLI 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GEN 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance IPM 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TIC 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TOB 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CTT 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FEP 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TZP 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMK 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LZD 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SAM 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance STRS 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GENS 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance MXF 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FOX 90,7.0,90.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LVX 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMP 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CFZ 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CIP 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GEN 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PIP 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ATM 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance IPM 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TIC 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TOB 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERY 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance OXA 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PEN 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CLI 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NAL 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance DOX 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance QUD 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance RIF 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TET 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMC 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMK 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CAZ 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CHL 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CRO 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CTT 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FEP 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NIT 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SXT 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance VAN 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TZP 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERT 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LZD 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SAM 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance STRS 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GENS 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance MXF 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FOX 180,7.0,180.0,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CFZ ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERY ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LVX ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance OXA ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PEN ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TET ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMP ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CIP ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SXT ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance DOX ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance RIF ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NIT ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance VAN ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance QUD ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CLI ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMC ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ATM ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CAZ ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CRO ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FEP ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance NAL ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance PIP ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GEN ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance ERT ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CHL ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance AMK ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance CTT ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance IPM ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TOB ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TIC ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance TZP ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance LZD ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance SAM ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance GENS ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance STRS ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance MXF ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,micro - prev resistance FOX ALL,7.0,ALL,"Prior antibiotic resistance, see documentation for acronyms"
+all_uti_features.csv,ab class 7 - fluoroquinolone,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - glycopeptides,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - nitroimidazole,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - macrolide_lincosamide,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - nitrofuran,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - folate_inhibitor,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - beta_lactam,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - antifungal,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - tetracycline,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 7 - ansamycin,2.0,7,Prior antibiotic exposure (class)
+all_uti_features.csv,medication 7 - ciprofloxacin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - levofloxacin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - vancomycin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - metronidazole,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - clindamycin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - azithromycin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - nitrofurantoin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - trimethoprim/sulfamethoxazole,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - amoxicillin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - cephalexin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - fluconazole,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - penicillin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - amoxicillin/clavulanate,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - ceftazidime,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - doxycycline,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - cefpodoxime,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - tetracycline,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - dicloxacillin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - cefuroxime,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - minocycline,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - rifampin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - clarithromycin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - nafcillin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - erythromycin,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 7 - cefadroxil,2.0,7,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype 7 - penicillins,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - cephalosporin_gen1,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - azole,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - beta_lactam_combo,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - cephalosporin_gen3,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - antistaphylococcal,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 7 - cephalosporin_gen2,2.0,7,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab class 14 - tetracycline,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - fluoroquinolone,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - nitrofuran,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - glycopeptides,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - nitroimidazole,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - macrolide_lincosamide,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - folate_inhibitor,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - beta_lactam,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - antifungal,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - fosfomycin,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 14 - ansamycin,2.0,14,Prior antibiotic exposure (class)
+all_uti_features.csv,medication 14 - tetracycline,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - ciprofloxacin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - nitrofurantoin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - levofloxacin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - vancomycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - metronidazole,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - clindamycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - azithromycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - doxycycline,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - trimethoprim/sulfamethoxazole,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - amoxicillin/clavulanate,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - fluconazole,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - amoxicillin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - cephalexin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - dicloxacillin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - penicillin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - ceftazidime,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - cefpodoxime,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - erythromycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - clarithromycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - moxifloxacin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - nafcillin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - fosfomycin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - cefuroxime,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - minocycline,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - rifampin,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 14 - cefadroxil,2.0,14,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype 14 - beta_lactam_combo,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - azole,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - penicillins,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - cephalosporin_gen1,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - antistaphylococcal,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - cephalosporin_gen3,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 14 - cephalosporin_gen2,2.0,14,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab class 30 - macrolide_lincosamide,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - tetracycline,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - fluoroquinolone,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - nitrofuran,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - glycopeptides,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - nitroimidazole,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - beta_lactam,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - folate_inhibitor,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - antifungal,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - monobactam,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - aminoglycoside,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - fosfomycin,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 30 - ansamycin,2.0,30,Prior antibiotic exposure (class)
+all_uti_features.csv,medication 30 - azithromycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - tetracycline,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - moxifloxacin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - ciprofloxacin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - nitrofurantoin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - levofloxacin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - vancomycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - metronidazole,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - clarithromycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - clindamycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - doxycycline,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cefazolin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - trimethoprim/sulfamethoxazole,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - amoxicillin/clavulanate,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - amoxicillin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - fluconazole,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - aztreonam,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cephalexin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - dicloxacillin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - ceftriaxone,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cefoxitin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cefpodoxime,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - penicillin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - ceftazidime,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - ampicillin/sulbactam,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - fosfomycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - erythromycin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - gentamicin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - nafcillin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cefuroxime,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - minocycline,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - rifampin,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 30 - cefadroxil,2.0,30,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype 30 - cephalosporin_gen1,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - beta_lactam_combo,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - penicillins,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - azole,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - antistaphylococcal,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - cephalosporin_gen3,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 30 - cephalosporin_gen2,2.0,30,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab class 90 - macrolide_lincosamide,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - fluoroquinolone,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - tetracycline,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - nitrofuran,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - beta_lactam,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - glycopeptides,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - nitroimidazole,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - folate_inhibitor,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - antifungal,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - fosfomycin,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - monobactam,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - aminoglycoside,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - oxazolidinones,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - mixed,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 90 - ansamycin,2.0,90,Prior antibiotic exposure (class)
+all_uti_features.csv,medication 90 - azithromycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - ciprofloxacin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - tetracycline,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - moxifloxacin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - levofloxacin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - nitrofurantoin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - amoxicillin/clavulanate,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - vancomycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefepime,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - metronidazole,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - trimethoprim/sulfamethoxazole,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - clindamycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefpodoxime,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - fluconazole,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - clarithromycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - ceftriaxone,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - doxycycline,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cephalexin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefazolin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - trimethoprim,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - amoxicillin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - fosfomycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - aztreonam,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefotetan,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - penicillin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - dicloxacillin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - ceftazidime,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - linezolid,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - gentamicin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefixime,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefuroxime,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - ampicillin/sulbactam,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefoxitin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - ertapenem,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - erythromycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefprozil,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefaclor,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - cefadroxil,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - nafcillin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - amoxicillin_clarithromycin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - minocycline,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 90 - rifampin,2.0,90,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype 90 - beta_lactam_combo,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - cephalosporin_gen4,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - carbapenem,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - cephalosporin_gen3,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - azole,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - cephalosporin_gen1,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - penicillins,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - cephalosporin_gen2,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 90 - antistaphylococcal,2.0,90,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab class 180 - folate_inhibitor,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - macrolide_lincosamide,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - fluoroquinolone,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - tetracycline,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - nitrofuran,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - beta_lactam,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - antifungal,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - glycopeptides,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - nitroimidazole,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - aminoglycoside,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - fosfomycin,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - monobactam,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - oxazolidinones,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - polymyxin,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - ansamycin,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class 180 - mixed,2.0,180,Prior antibiotic exposure (class)
+all_uti_features.csv,medication 180 - trimethoprim/sulfamethoxazole,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - azithromycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ciprofloxacin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - tetracycline,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - nitrofurantoin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - moxifloxacin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - levofloxacin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - amoxicillin/clavulanate,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - fluconazole,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - meropenem,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - vancomycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefepime,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - micafungin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - metronidazole,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - clindamycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - doxycycline,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ofloxacin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefpodoxime,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - clarithromycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ceftriaxone,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - amikacin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cephalexin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefazolin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefixime,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - trimethoprim,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - amoxicillin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - fosfomycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - aztreonam,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefotetan,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - penicillin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - dicloxacillin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ceftazidime,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - linezolid,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - gentamicin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefuroxime,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefaclor,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ampicillin/sulbactam,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefoxitin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - ertapenem,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - amphotericin_b,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - erythromycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefadroxil,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - cefprozil,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - rifampin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - amoxicillin_clarithromycin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - nafcillin,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - minocycline,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication 180 - polymyxin_b,2.0,180,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype 180 - beta_lactam_combo,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - azole,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - carbapenem,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - cephalosporin_gen4,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - echinocandin,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - cephalosporin_gen3,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - cephalosporin_gen1,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - penicillins,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - cephalosporin_gen2,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - antistaphylococcal,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype 180 - polyene,2.0,180,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab class ALL - fluoroquinolone,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - glycopeptides,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - macrolide_lincosamide,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - folate_inhibitor,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - nitrofuran,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - tetracycline,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - antifungal,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - beta_lactam,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - nitroimidazole,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - aminoglycoside,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - fosfomycin,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - monobactam,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - ansamycin,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - oxazolidinones,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - polymyxin,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,ab class ALL - mixed,2.0,ALL,Prior antibiotic exposure (class)
+all_uti_features.csv,medication ALL - levofloxacin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - vancomycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ciprofloxacin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - azithromycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - trimethoprim/sulfamethoxazole,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - nitrofurantoin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - tetracycline,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - moxifloxacin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - fluconazole,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - amoxicillin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cephalexin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefpodoxime,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - doxycycline,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefixime,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ceftriaxone,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - amoxicillin/clavulanate,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - dicloxacillin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - meropenem,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefepime,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - micafungin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - metronidazole,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - clindamycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ofloxacin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - gentamicin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - minocycline,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - clarithromycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - amikacin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ertapenem,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefuroxime,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefazolin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - trimethoprim,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - fosfomycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ampicillin/sulbactam,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - penicillin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - aztreonam,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefotetan,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - rifampin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - nafcillin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - ceftazidime,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - linezolid,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - erythromycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefaclor,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - caspofungin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefoxitin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - polymyxin_b,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - amphotericin_b,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefadroxil,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - cefprozil,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,medication ALL - amoxicillin_clarithromycin,2.0,ALL,Prior antibiotic exposure (detailed names)
+all_uti_features.csv,ab subtype ALL - azole,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - penicillins,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - cephalosporin_gen1,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - cephalosporin_gen3,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - beta_lactam_combo,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - antistaphylococcal,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - carbapenem,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - cephalosporin_gen4,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - echinocandin,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - cephalosporin_gen2,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,ab subtype ALL - polyene,2.0,ALL,Prior antibiotic exposure (subclass)
+all_uti_features.csv,micro - prev organism Escherichia 14,7.0,14,Prior infecting organism
+all_uti_features.csv,micro - prev organism Klebsiella 14,7.0,14,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterococcus 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Escherichia 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staphylococcus 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Klebsiella 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Proteus 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staph_coag_neg 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterobacter 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Citrobacter 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Streptococcus 30,7.0,30,Prior infecting organism
+all_uti_features.csv,micro - prev organism Klebsiella 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Streptococcus 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Escherichia 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staph_coag_neg 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterobacter 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staphylococcus 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Proteus 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterococcus 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Pseudomonas 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Citrobacter 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Acinetobacter 90,7.0,90,Prior infecting organism
+all_uti_features.csv,micro - prev organism Pseudomonas 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Escherichia 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staphylococcus 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterococcus 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Enterobacter 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Providencia 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Staph_coag_neg 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Streptococcus 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Acinetobacter 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Citrobacter 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Klebsiella 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Proteus 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Serratia 180,7.0,180,Prior infecting organism
+all_uti_features.csv,micro - prev organism Morganella 180,7.0,180,Prior infecting organism
+all_uti_features.csv,comorbidity 7 - Arrhythmia,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - HTN,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Hypothyroid,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Pulmonary,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - FluidsLytes,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Lymphoma,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - CHF,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Obesity,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - PVD,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Rheumatic,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - BloodLoss,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - DM,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Renal,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Depression,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - NeuroOther,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Paralysis,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Valvular,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Coagulopathy,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Anemia,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Alcohol,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - HTNcx,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Tumor,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - WeightLoss,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Liver,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Psychoses,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - DMcx,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Drugs,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - Mets,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - PUD,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - PHTN,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 7 - HIV,0.0,7,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Arrhythmia,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - HTN,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Hypothyroid,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Pulmonary,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - CHF,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - FluidsLytes,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Lymphoma,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Obesity,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - PVD,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Rheumatic,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - BloodLoss,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - DM,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Renal,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Depression,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - NeuroOther,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Paralysis,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Valvular,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Coagulopathy,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - DMcx,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Anemia,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Alcohol,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - HTNcx,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Tumor,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Psychoses,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - WeightLoss,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Liver,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - PHTN,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Drugs,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - Mets,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - PUD,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 14 - HIV,0.0,14,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Arrhythmia,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - HTN,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Hypothyroid,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Pulmonary,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - CHF,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - FluidsLytes,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Lymphoma,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Obesity,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - PVD,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Rheumatic,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - BloodLoss,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - DM,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Renal,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Depression,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - NeuroOther,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Paralysis,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Valvular,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Coagulopathy,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - DMcx,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Anemia,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Alcohol,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - HTNcx,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Tumor,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Psychoses,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - WeightLoss,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Liver,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - PHTN,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Drugs,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - Mets,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - PUD,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 30 - HIV,0.0,30,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Arrhythmia,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - HTN,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Hypothyroid,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Pulmonary,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - CHF,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - FluidsLytes,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Lymphoma,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Obesity,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - DM,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - PVD,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Rheumatic,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - BloodLoss,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Depression,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Renal,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Paralysis,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - NeuroOther,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Valvular,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - HTNcx,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Coagulopathy,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - DMcx,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Anemia,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Alcohol,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Tumor,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Psychoses,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - WeightLoss,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Liver,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - PHTN,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Drugs,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - Mets,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - PUD,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 90 - HIV,0.0,90,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Arrhythmia,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - HTN,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Hypothyroid,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Pulmonary,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Depression,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - CHF,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - FluidsLytes,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Lymphoma,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Obesity,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - DM,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - PVD,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Rheumatic,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Anemia,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - BloodLoss,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Renal,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Paralysis,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - NeuroOther,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Valvular,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - HTNcx,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Coagulopathy,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - DMcx,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Alcohol,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Tumor,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Psychoses,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - WeightLoss,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Liver,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - PHTN,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Drugs,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - Mets,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - PUD,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,comorbidity 180 - HIV,0.0,180,Elixhauser Comorbidities
+all_uti_features.csv,procedure 180 - had cvc,0.0,180,Prior central venous catheter (CVC)
+all_uti_features.csv,procedure 180 - had surgery,0.0,180,Prior surgical procedure
+all_uti_features.csv,procedure 180 - had mechanical ventilation,0.0,180,Prior mechanical ventilation
+all_uti_features.csv,procedure 180 - had hemodialysis,0.0,180,Prior hemodialysis
+all_uti_features.csv,procedure 180 - had parenteral nutrition,0.0,180,Prior parenteral nutrition
+all_uti_features.csv,custom 7 - nursing home,0.0,7,Prior visit to skilled nursing facility
+all_uti_features.csv,custom 14 - nursing home,0.0,14,Prior visit to skilled nursing facility
+all_uti_features.csv,custom 30 - nursing home,0.0,30,Prior visit to skilled nursing facility
+all_uti_features.csv,custom 90 - nursing home,0.0,90,Prior visit to skilled nursing facility
+all_uti_features.csv,infection_sites - RESPIRATORY_TRACT,,,Other infection sites
+all_uti_features.csv,infection_sites - BLOOD,,,Other infection sites
+all_uti_features.csv,infection_sites - SKIN_SOFTTISSUE,,,Other infection sites
+all_uti_features.csv,infection_sites - ABSCESS_OR_FLUID_NOS,,,Other infection sites
+all_uti_features.csv,infection_sites - MUCOCUTANEOUS,,,Other infection sites
+all_uti_features.csv,infection_sites - GENITOURINARY,,,Other infection sites
+all_uti_features.csv,hosp ward - ER,,,Specimen collected in Emergency Room
+all_uti_features.csv,hosp ward - ICU,,,Specimen collected in Intensive Care Unit
+all_uti_features.csv,hosp ward - IP,,,Specimen collected in inpatient setting
+all_uti_features.csv,hosp ward - OP,,,Specimen collected in outpatient setting
+all_uti_features.csv,selected micro - colonization pressure AMC 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure AMP 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure ATM 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure CAZ 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure CIP 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure CLI 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure CRO 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure DOX 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure ERY 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure FEP 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure FOX 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure GEN 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure IPM 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure LVX 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure MEM 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure MXF 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure NIT 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure OXA 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure PEN 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure SAM 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure SXT 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure TET 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure TZP 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure VAN 90 - granular level,7.0,90,Resistance rate at same floor/ward/clinic
+all_uti_features.csv,selected micro - colonization pressure AMC 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure AMP 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure ATM 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure CAZ 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure CIP 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure CLI 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure CRO 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure DOX 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure ERY 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure FEP 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure FOX 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure GEN 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure IPM 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure LVX 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure MEM 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure MIN 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure MXF 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure NIT 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure OXA 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure PEN 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure SAM 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure SXT 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure TET 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure TZP 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure VAN 90 - higher level,7.0,90,Resistance rate at same hospital / department type
+all_uti_features.csv,selected micro - colonization pressure AMC 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure AMP 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure ATM 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure CAZ 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure CIP 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure CLI 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure CRO 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure DOX 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure ERY 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure FEP 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure FOX 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure GEN 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure IPM 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure LVX 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure MEM 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure MIN 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure MXF 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure NIT 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure OXA 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure PEN 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure SAM 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure SXT 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure TET 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure TZP 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,selected micro - colonization pressure VAN 90 - overall,7.0,90,Resistance rate across all specimens
+all_uti_features.csv,is_train,,,Used to denote membership in training set (2007-13)
+all_uti_features.csv,uncomplicated,,,Used to denote membership in uncomplicated UTI cohort
